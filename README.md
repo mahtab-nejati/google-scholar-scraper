@@ -8,7 +8,7 @@ Use on Google Colab is recommended. Feel free to make a copy of the same code av
 
 # Limitations
 
-1.  The server detects activities. Continuous scraping or scrapning data for an author with more than a couple of hundred publications throws erros. As a temporary solution, the partial results are pickled and is later loaded to try and scrape the remaining data. The following solutions did not work:
+1.  The server detects activities. Continuous scraping or scrapning data for an author with more than a couple of hundred publications throws erros. As a temporary solution, the partial results are saved into a json file and are later loaded to try and scrape the remaining data. The following solutions did not work:
 
 - Using sleep between requests.
 - Using proxies (due to connection challenges).
@@ -44,4 +44,4 @@ author_obj.all_publications_extracted
 author_obj.scrape()
 ```
 
-The data will be saved as both pickled files and json files in your DATA_PATH. If you are trying to re-scrape data on an author from scratch, destroy the pickled file named AUTHORID.pkl before creating the author_object again.
+The data will be saved as json files in your DATA_PATH. If you are trying to re-scrape data on an author from scratch, destroy the json file named AUTHORID.json before creating the author_object again.
