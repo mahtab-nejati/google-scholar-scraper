@@ -17,9 +17,9 @@ Use on Google Colab is recommended. Feel free to make a copy of the same code av
 
 # Google Scholar Scraper
 
-1.  Set the AUTHORID variable in the following.
-2.  If on Google Colab, mount your Google Drive.
-3.  Define your DATA_PATH variable.
+1.  If on Google Colab, mount your Google Drive.
+2.  Define your DATA_PATH variable.
+3.  Set the AUTHORID variable.
 4.  Create your author object using:
 
 ```
